@@ -28,13 +28,24 @@
             <option value="1000cc">1000cc</option>
           </select>
         </div>
+
+        <div class="form-item">
+          <label for="cooling" class="primary">Cooling Type</label>
+          <input type="radio" id="coolingChoice1" name="cooling" value="Air Cooled" checked>
+          <label for="cooling" class="primary">Air Cooled</label>
+          <input type="radio" id="coolingChoice2" name="cooling" value="Oil Cooled">
+          <label for="cooling" class="primary">Oil Cooled</label>
+          <input type="radio" id="coolingChoice3" name="cooling" value="Water Cooled">
+          <label for="cooling" class="primary">Water Cooled</label>
+        </div>
+
       </div>
       <input type="submit" value="save"/>
     </form>
 
     <button id="delete-all">Delete All</button>
 
-    <h1>Reading List</h1>
+    <h1>Cam's Bike List</h1>
     <ul id="bike-list"></ul>
   </body>
 </html>

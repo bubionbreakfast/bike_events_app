@@ -9,30 +9,38 @@ document.addEventListener('DOMContentLoaded', () => {
 const handleNewItemFormSubmit = function (event) {
   event.preventDefault();
 
-  const readingListItem = createReadingListItem(event.target);
-  const readingList = document.querySelector('#bike-list');
-  readingList.appendChild(readingListItem);
+  const bikeListItem = createBikeListItem(event.target);
+  const bikeList = document.querySelector('#bike-list');
+  bikeList.appendChild(bikeListItem);
 
   event.target.reset();
 }
 
-const createReadingListItem = function (form) {
-  const readingListItem = document.createElement('li');
-  readingListItem.classList.add('bike-list-item');
+const createBikeListItem = function (form) {
+  const bikeListItem = document.createElement('li');
+  bikeListItem.classList.add('bike-list-item');
 
-  const title = document.createElement('h2');
-  title.textContent = form.make.value;
-  readingListItem.appendChild(title);
+  const make = document.createElement('h2');
+  make.textContent = form.make.value;
+  bikeListItem.appendChild(make);
 
-  const author = document.createElement('h3');
-  author.textContent = form.model.value;
-  readingListItem.appendChild(author);
+  const model = document.createElement('h3');
+  model.textContent = form.model.value;
+  bikeListItem.appendChild(model);
 
   const category = document.createElement('p');
   category.textContent = form.category.value;
-  readingListItem.appendChild(category);
+  bikeListItem.appendChild(category);
 
-  return readingListItem;
+  const cooling = document.createElement('h4');
+  cooling.textContent = form.cooling.value;
+  bikeListItem.appendChild(cooling);
+
+  function returnCoolingValue(cooling) {
+  document.getElementById("result").value = cooling;
+}
+
+  return bikeListItem;
 }
 
 const handleDeleteAllClick = function (event) {
