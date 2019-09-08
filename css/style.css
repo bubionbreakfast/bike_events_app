@@ -6,10 +6,12 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .form-item {
   margin-right: 1.8rem;
+  text-align: center;
 }
 
 label.primary {
@@ -23,6 +25,20 @@ label::after {
 
 button, input[type="submit"] {
   margin-top: 1rem;
+  text-align: center;
+  -moz-appearance: none;
+-webkit-appearance: none;
+appearance: none;
+border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid black;
 }
 
 #bike-list {
@@ -35,6 +51,18 @@ button, input[type="submit"] {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid #20437c;
-  border-radius: 5%;
+  border-radius: 2%;
   background: #ddeaff;
+}
+
+h1#title {
+  font-family: sans-serif;
+  color: blue;
+  text-align: center;
+}
+
+h1#list-title-text {
+  font-family: sans-serif;
+  color: grey;
+  text-align: center;
 }
