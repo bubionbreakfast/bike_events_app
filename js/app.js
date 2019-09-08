@@ -9,20 +9,30 @@ document.addEventListener('DOMContentLoaded', () => {
   titleTextChange.addEventListener('onmouseover', handleChangeTitle);
 
 
+  //
+  // const changeTitle = document.querySelector('#list-title-text');
+  // changeTitle.addEventListener('onmouseover', mouseOver);
 
-  const changeTitle = document.querySelector('list-title-text');
-  changeTitle.addEventListener('mouseover', mouseOver);
 
-  function mouseOver() {
-    document.getElementById("list-title-text");
-    const changeTitle = document.createElement('list-title-text');
-    changeTitle.textContent = 'Add your Bike To the List';
-    changeTitle.appendChild(titleTextChange)
+  const myText = document.querySelector('h1#list-title-text');
+  myText.onmouseover = logMouseOver;
+  myText.onmouseout = logMouseOut;
+  function logMouseOver() {
+    myText.innerHTML = 'Just Add Your Fav Ride To The List';
   }
-  function mouseOut() {
-    document.getElementById("list-title-text").style.color = "black";
+  function logMouseOut() {
+    myText.innerHTML = 'Thats It, Just Keep ON Adding!';
   }
 
+  const myFooterText = document.querySelector('p#my-footer-text');
+  myFooterText.onmouseover = logMouseOver2;
+  myFooterText.onmouseout = logMouseOut2;
+  function logMouseOver2() {
+    myFooterText.innerHTML = 'RIDE BABY RIDE';
+  }
+  function logMouseOut2() {
+    myFooterText.innerHTML = 'Feel the Emotion, Ride the Winds of Change';
+  }
 // const myAlert = document.querySelector('title');
 // // myAlert.addEventListener('onclick', myAlert);
 // const function = myAlertFunction() {
@@ -35,6 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 })
+
+function mouseOver() {
+  document.getElementById("list-title-text");
+  const changeTitle = document.createElement('list-title-text');
+  changeTitle.textContent = 'Add your Bike To the List';
+  changeTitle.appendChild(titleTextChange)
+}
+function mouseOut() {
+  document.getElementById("list-title-text").style.color = "black";
+}
+
+
+
+
+
+
+
+
 
 const handleNewItemFormSubmit = function (event) {
   event.preventDefault();

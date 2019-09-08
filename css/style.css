@@ -69,6 +69,18 @@ h1#list-title-text {
   text-align: center;
 }
 
+/* h6#list-title-text {
+  font-family: 'Sonsie One';
+  color: grey;
+  text-align: center;
+} */
+
+/* h6 {
+  font-family: 'Sonsie One';
+  color: grey;
+  text-align: center;
+} */
+
 img#bike {
   animation-duration: 3s;
   animation-name: slidein;
@@ -90,3 +102,6 @@ footer {
   position: sticky;
   text-align: center;
 }
+ p#my-footer-text {
+   color: green;
+ }
