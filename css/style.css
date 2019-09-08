@@ -28,11 +28,12 @@ button, input[type="submit"] {
   margin-top: 1rem;
   text-align: center;
   -moz-appearance: none;
--webkit-appearance: none;
-appearance: none;
-border: 2px solid #999;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #999;
   transition: 0.2s all linear;
   margin-right: 5px;
+  font-family: 'Sonsie One';
 
   position: relative;
   top: 4px;
@@ -53,7 +54,7 @@ input:checked {
   padding: 0.5rem 0.8rem;
   border: 1px solid #20437c;
   border-radius: 2%;
-  background: #ddeaff;
+  background: linear-gradient(135deg, orange, orange 60%, cyan);
 }
 
 h1#title {
@@ -82,4 +83,10 @@ img#bike {
     margin-left: 0%;
     width: 35%;
   }
+}
+
+footer {
+  width: 100%;
+  position: sticky;
+  text-align: center;
 }
