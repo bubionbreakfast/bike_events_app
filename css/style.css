@@ -1,5 +1,6 @@
 body {
-  font-family: Palatino;
+  font-family: 'Sonsie One';
+
 }
 
 #form-wrapper {
@@ -56,13 +57,29 @@ input:checked {
 }
 
 h1#title {
-  font-family: sans-serif;
+  font-family: 'Sonsie One';
   color: blue;
   text-align: center;
 }
 
 h1#list-title-text {
-  font-family: sans-serif;
+  font-family: 'Sonsie One';
   color: grey;
   text-align: center;
+}
+
+img#bike {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 25%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 35%;
+  }
 }
